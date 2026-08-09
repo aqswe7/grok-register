@@ -1,0 +1,38 @@
+# ============================================================
+#  Grok Register - .gitignore
+#  以下文件含个人密钥/账号凭证/付费代理，绝不提交
+# ============================================================
+
+# ---- 私有配置（含 API key）----
+.env
+.env.local
+.env.*.local
+*.env
+
+# ---- 代理池（付费代理，含账号密码）----
+miyaip_pool.txt
+proxies.txt
+*_pool.txt
+relay.log
+*.log
+
+# ---- 产出数据（账号 sso 凭证）----
+tokens/
+sso_output/
+cookies/
+
+# ---- 构建 / 分发包 ----
+dist/
+
+# ---- Python ----
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# ---- 系统/编辑器 ----
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
